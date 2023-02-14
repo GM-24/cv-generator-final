@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/right_side.css" />
+    <link rel="stylesheet" href="/repetive_codes/styles.css" />
+    <script src="/app.js" defer></script>
+    <script src="/about-me.js" defer></script>
+    <script src="/email_number.js" defer></script>
+    <script src="/data-validation.js" defer></script>
+    <script src="/allClear.js" defer></script>
+    <script src="/disableBtn.js" defer></script>
+    <script src="/uploadImg.js" defer></script>
+    <title>ზოგადი ინფორმაცია</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="left">
+        <header class="top-header">
+          <button class="goBackBtn backBtn">
+            <a href="/Start/index.html"
+              ><img class="backBtn reset-btn" src="/images/backBtn.png" alt=""
+            /></a>
+          </button>
+          <div class="txt-container">
+            <h3 class="header_text">პირადი ინფო</h3>
+            <p class="pagination">1/3</p>
+          </div>
+        </header>
+
+        <hr />
+        <div class="form-contianer">
+          <form action="" class="form">
+            <div class="name-fields">
+              <div class="fname-wrap">
+                <div class="input-container">
+                  <label for="fname" class="labels">სახელი</label>
+                  <input
+                    class="txt_input border test1 name-input iMessedUp"
+                    type="text"
+                    placeholder="ანზორ"
+                    name="fname"
+                    required
+                  />
+                  <img class="error fname-error hide" src="/error.png" alt="" />
+                </div>
+                <p class="guidlines">მინიმუმ 2 ასო, ქართული ასოები</p>
+              </div>
+              <div class="lname-wrap">
+                <div class="input-container">
+                  <label for="lname" class="labels">გვარი</label>
+                  <input
+                    class="txt_input border test2 lName lastF-ing_name"
+                    type="text"
+                    placeholder="მუმლაძე"
+                    name="lname"
+                    required
+                  />
+                  <img class="error lname-error hide" src="/error.png" alt="" />
+                </div>
+
+                <p class="guidlines">მინიმუმ 2 ასო, ქართული ასოები</p>
+              </div>
+            </div>
+            <div class="file_upload">
+              <label for="file" class="labels">პირადი ფოტოს ატვირთვა</label>
+              <input
+                type="file"
+                name="file"
+                class="image-uploader"
+                required
+                placeholder="ატვირთვა"
+              />
+            </div>
+            <div class="aboutMe-container">
+              <label for="aboutMe" class="labels"
+                >ჩემ შესახებ(არასავალდებულო)</label
+              >
+              <textarea
+                class="about-me-info"
+                name="aboutMe"
+                placeholder="ზოგადი ინფო ჩემს შესახებ"
+              ></textarea>
+            </div>
+
+            <div class="long_field long_field_email">
+              <label for="email" class="labels">ელ.ფოსტა</label>
+              <div class="width email-container">
+                <input
+                  class="border email mf-email"
+                  type="email"
+                  name="email"
+                  placeholder="anzor666@redberry.ge"
+                  required
+                />
+                <img class="email-error hide" src="/error.png" alt="" />
+              </div>
+
+              <p class="guidlines">უნდა მთავრდებოდეს @redberry.ge-ით</p>
+            </div>
+
+            <div class="long_field long_field_number">
+              <label for="phnumber" class="labels">მობილურის ნომერი</label>
+              <div class="width phone-container">
+                <input
+                  class="border number"
+                  type="tel"
+                  placeholder="+995 555 12 34 56"
+                  required
+                />
+              </div>
+
+              <p class="guidlines">
+                უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="btn-container">
+          <a href="/experience/experience.html"
+            ><button class="btn messed-up-btn next-btn disabled" disabled>
+              შემდეგი
+            </button></a
+          >
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="resume-info">
+          <div class="img-container"><img src="" alt="" class="image" /></div>
+          <div class="fullName">
+            <h1 class="fname color"></h1>
+            <h1 class="lname color"></h1>
+          </div>
+          <div class="contact-info">
+            <div class="icons">
+              <img class="email-icon hidden" src="/images/Vector.png" alt="" />
+              <p class="person-email"></p>
+            </div>
+            <div class="icons">
+              <img class="phone-icon hidden" src="/images/phone.png" alt="" />
+              <p class="person-number"></p>
+            </div>
+          </div>
+          <div class="basic-about-me-info">
+            <h3 class="about--me color hidden">ჩემ შესახებ</h3>
+            <p class="client-about-me-input"></p>
+          </div>
+        </div>
+        <div class="bottom-img-container">
+          <img class="pagination-logo" src="/images/LOGO-12 1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/fd89db30b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

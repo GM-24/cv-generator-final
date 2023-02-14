@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/repetive_codes/styles.css" />
+    <link rel="stylesheet" href="/right_side.css">
+    <script src="/email_number.js" defer></script>
+    <script src="/app.js" defer></script>
+    <script src="/about-me.js" defer></script>
+    <script src="/experience/experience.js" defer></script>
+    <script src="/api.js" defer></script>
+    <script src="edu.js" defer></script>
+    <script src="/allClear.js" defer></script>
+    <script src="/displayImg.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>განათლება</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="left">
+        <header class="top-header">
+          
+          <button class="goBackBtn backBtn">
+            <a href="/Start/index.html"
+              ><img class="backBtn" src="/images/backBtn.png" alt=""
+            /></a>
+          </button>
+          
+          <div class="txt-container">
+            <h3 class="header_text">განათლება</h3>
+            <p class="pagination">3/3</p>
+          </div>
+        </header>
+        <hr />
+        <div class="form-container">
+          <form action="" class="form">
+            <div class="long_field">
+              <div class="width uni-container">
+              <label for="phnumber" class="labels">სასწავლებელი</label>
+              <input
+                class="border uni-name-input "
+                type="text"
+                placeholder="სასწავლებელი"
+                required
+              />
+              <img class="iSuckAtThis uniErr hide" src="/error.png" alt="">
+              </div>
+              
+              <p class="guidlines">მინიმუმ 2 სიმბოლო</p>
+            </div>
+            
+            <div class="name-fields">
+              <div class="fname-wrap" s>
+                <label for="major" class="labels">ხარისხი</label>
+                <select
+                  class="txt_input border option-container"
+                  type=""
+                  name="major"
+                  required
+                >
+                <option selected disabled hidden>აირჩიეთ ხარისხი</option>
+                </select>
+              </div>
+              <div class="lname-wrap">
+                <label for="endDate" class="labels">დამთავრების რიცხვი</label>
+                <input
+                  class="txt_input border uni_end_date"
+                  type="date"
+                  placeholder="mm / dd / yyyy"
+                  name="endDate"
+                  required
+                />
+              </div>
+            </div>
+            <div class="aboutMe-container">
+              <label for="description" class="labels">აღწერა</label>
+              <textarea class="education_desc" name="description" placeholder="განათლების აღწერა"></textarea>
+            </div>
+          </form>
+        </div>
+
+        <hr>
+
+        <div class="all-btns">
+            <div class="extra-btn-container">
+            <button class="big-btn">
+                სხვა სასწავლებლის დამატება
+            </button>
+        </div>
+
+
+        <div class="btn-container">
+            <a href="/final_page/fianl_page.html"
+            ><button class="btn custom-btn finishBtn">დასრულება</button></a
+          >
+          <a href="/experience/experience.html"
+            ><button class="btn custom-btn custom-btn-back">უკან</button></a
+          >
+        </div>
+        </div>
+        
+      </div>
+      <div class="right">
+       <div class="resume-info">
+        <div class="img-container"><img src="" alt="" class="image" /></div>
+          <div class="fullName">
+            <h1 class="fname color"></h1>
+            <h1 class="lname color"></h1>
+          </div>
+          <div class="contact-info">
+            <div class="icons">
+              <img class="email-icon hidden" src="/images/Vector.png" alt="" />
+              <p class="person-email"></p>
+            </div>
+            <div class="icons">
+              <img class="phone-icon hidden" src="/images/phone.png" alt="" />
+              <p class="person-number"></p>
+            </div>
+          </div>
+          <div class="basic-about-me-info">
+            <h3 class="about--me color">ჩემ შესახებ</h3>
+            <p class="client-about-me-input"></p>
+          </div>
+          <hr style="margin-top: 100px; margin-left: -20px ;">
+          <div class="experience_info">
+            <h3 class="color header_1" style="margin-top: 10px;" >გამოცდილება</h3>
+            <div class="position-info-container">
+              <div class="position-comp">
+                <p class="position-info" style="margin:10px 0 5px 0;"></p>
+                <p class="comp-name"  style="margin:10px 0 5px 10px;"></p>
+              </div>
+              
+              <div class="timeline">
+                <p class="guidlines start-date-display"></p>
+                
+                <p class="guidlines end-date-display"></p>
+              </div>
+            </div>
+            <p class="job-desc"></p>
+          </div>
+          <hr style="margin-top: 10px; margin-left: -20px ;">
+          <div class="education_info">
+            <h3 class="color header_2 hidden" style="margin-top: 10px;" >განათლება</h3>
+            <div class="position-info-container">
+              <div class="position-comp">
+                <p class="uni-name" style="margin:10px 0 5px 0;"></p>
+                <p class="degree"  style="margin:10px 0 5px 10px; font-size: 15px;"></p>
+              </div>
+              
+              <div class="timeline">
+                
+                
+                <p class="guidlines uni-end-date-display"></p>
+              </div>
+            </div>
+            <p class="uni-desc"></p>
+          </div>
+        </div>
+        <div class="bottom-img-container">
+          <img class="pagination-logo" src="/images/LOGO-12 1.png" alt="" />
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
